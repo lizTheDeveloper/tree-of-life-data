@@ -1,0 +1,78 @@
+{
+ "counts": {
+  "clades": 1138,
+  "clades_in_synthetic_tree": 780,
+  "clades_with_common_name": 116,
+  "clades_with_divergence": 10,
+  "clades_with_fossil_range": 309,
+  "clades_with_habitat": 257,
+  "clades_with_pbdb_match": 332,
+  "clades_with_size": 154,
+  "genera": 15409,
+  "genera_with_size": 7068,
+  "slices": 44
+ },
+ "fetched_dates": [
+  "2026-11-08",
+  "2026-11-08"
+ ],
+ "files": {
+  "build_report.json": {
+   "bytes": 5641,
+   "sha256": "c9303e783948d41ca48c3bec12a05c4a3f5b4b2ce98276a53404fd0091ea7253"
+  },
+  "clades.jsonl": {
+   "bytes": 766789,
+   "sha256": "310804b9debec1a628557c0896fd62481c8d56e5dc426314ab310cbb531f72ce"
+  },
+  "genera.jsonl": {
+   "bytes": 10368227,
+   "sha256": "17a49aa0f7764cf997a029c59f6535343d7ffc0847855d4ba49c893d111b1c11"
+  },
+  "references.json": {
+   "bytes": 3706,
+   "sha256": "c4057fcbff1deca898091c89b01d023ad20cc90ab3220fa3a9b39d6ebd738cea"
+  },
+  "slices.jsonl": {
+   "bytes": 50221,
+   "sha256": "b6e00761253f5b2e981c393ca489fbcd3b7b6ecc341ac4c40860b5eae38e47ba"
+  },
+  "synthetic_subtree.nwk": {
+   "bytes": 13139,
+   "sha256": "9c9fb06f0879c6a365e14a74770002d780f5dd1079b798b9ed932a1c8780fc33"
+  }
+ },
+ "n_cached_requests_used": 286,
+ "package": "tree-of-life-data",
+ "sources": {
+  "curated": {
+   "files": [
+    "curated/divergence.json",
+    "curated/sizes.json",
+    "curated/habitat.json",
+    "curated/pbdb_corrections.json"
+   ],
+   "licence": "CC BY 4.0"
+  },
+  "ncbi_taxonomy": {
+   "api": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+   "fields": [
+    "common_name"
+   ],
+   "licence": "public domain (US government work)"
+  },
+  "open_tree": {
+   "api": "https://api.opentreeoflife.org/v3",
+   "licence": "CC0 1.0",
+   "synth_id": "opentree16.1",
+   "taxonomy": "ott3.7draft3"
+  },
+  "pbdb": {
+   "api": "https://paleobiodb.org/data1.2",
+   "declared_licence": "Creative Commons CC0",
+   "declared_licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "licence_applied": "CC BY 4.0 (attribution given; see DATA-LICENSE.md)"
+  }
+ },
+ "version": "0.1.0"
+}
