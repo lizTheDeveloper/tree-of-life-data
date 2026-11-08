@@ -1,0 +1,59 @@
+{
+  "_comment": "Build scope for v0.1. All taxa are pinned by stable id (OTT id, PBDB taxon id). 'name' fields are expectations that the build asserts against the upstream record; they are never used to look anything up. See README 'Widening the scope'.",
+  "root": {"ott_id": 304358, "name": "Eukaryota"},
+  "include_ancestor_siblings": true,
+  "max_clades": 5000,
+  "skip_ranks": ["species", "subspecies", "variety", "varietas", "forma", "form", "no rank - terminal", "infraspecificname", "species group", "species subgroup"],
+  "_skip_flags_extra": "applied inside focal groups only; ancestor siblings are filtered with the synthesis flags alone, so extinct unplaced groups such as Trilobitomorpha stay as context",
+  "skip_flags_extra": ["incertae_sedis", "incertae_sedis_inherited", "unplaced", "unplaced_inherited"],
+  "focal_groups": [
+    {"ott_id": 202765, "name": "Choanoflagellida", "label": "choanoflagellates", "max_depth": 4, "stop_rank": "genus",
+     "pbdb_anchor": {"id": 67093, "name": "Choanoflagellata"}, "pbdb_genera": true, "pbdb_measurements": false},
+    {"ott_id": 391142, "name": "Volvocaceae", "label": "volvocine colonial algae", "max_depth": 2, "stop_rank": "genus",
+     "pbdb_anchor": {"id": 54811, "name": "Chlorophyta"}, "pbdb_genera": false, "pbdb_measurements": false},
+    {"ott_id": 111438, "name": "Tardigrada", "label": "tardigrades", "max_depth": 5, "stop_rank": "genus",
+     "pbdb_anchor": {"id": 67137, "name": "Tardigrada"}, "pbdb_genera": true, "pbdb_measurements": true},
+    {"ott_id": 395057, "name": "Nematoda", "label": "nematodes", "max_depth": 3, "stop_rank": "order",
+     "pbdb_anchor": {"id": 6998, "name": "Nematoda"}, "pbdb_genera": true, "pbdb_measurements": true},
+    {"ott_id": 511967, "name": "Arachnida", "label": "arachnids", "max_depth": 3, "stop_rank": "order",
+     "pbdb_anchor": {"id": 19008, "name": "Arachnida"}, "pbdb_genera": true, "pbdb_measurements": true},
+    {"ott_id": 150772, "name": "Acari", "label": "mites and ticks", "max_depth": 6, "stop_rank": "superfamily",
+     "pbdb_anchor": {"id": 19008, "name": "Arachnida"}, "pbdb_genera": false, "pbdb_measurements": false},
+    {"ott_id": 1062253, "name": "Insecta", "label": "insects", "max_depth": 7, "stop_rank": "order",
+     "pbdb_anchor": {"id": 56637, "name": "Insecta"}, "pbdb_genera": true, "pbdb_measurements": true},
+    {"ott_id": 603650, "name": "Hemiptera", "label": "true bugs", "max_depth": 6, "stop_rank": "family",
+     "pbdb_anchor": {"id": 56637, "name": "Insecta"}, "pbdb_genera": false, "pbdb_measurements": false},
+    {"ott_id": 155403, "name": "Aphididae", "label": "aphids", "max_depth": 2, "stop_rank": "subfamily",
+     "pbdb_anchor": {"id": 56637, "name": "Insecta"}, "pbdb_genera": false, "pbdb_measurements": false},
+    {"ott_id": 246594, "name": "Bryophyta", "label": "mosses", "max_depth": 5, "stop_rank": "order",
+     "pbdb_anchor": {"id": 55134, "name": "Bryophyta"}, "pbdb_genera": true, "pbdb_measurements": true}
+  ],
+  "seed_taxa": [
+    {"ott_id": 1002450, "name": "Salpingoeca rosetta"},
+    {"ott_id": 281703, "name": "Monosiga brevicollis"},
+    {"ott_id": 391120, "name": "Volvox carteri"},
+    {"ott_id": 33153, "name": "Chlamydomonas reinhardtii"},
+    {"ott_id": 361837, "name": "Gonium pectorale"},
+    {"ott_id": 7485612, "name": "Hypsibius exemplaris"},
+    {"ott_id": 320817, "name": "Ramazzottius varieornatus"},
+    {"ott_id": 395048, "name": "Caenorhabditis elegans"},
+    {"ott_id": 814484, "name": "Acyrthosiphon pisum"},
+    {"ott_id": 106112, "name": "Tetranychus urticae"},
+    {"ott_id": 3320116, "name": "Dicopomorpha echmepterygis"},
+    {"ott_id": 821359, "name": "Physcomitrella patens"}
+  ],
+  "pbdb_pins": {
+    "_comment": "Hand-verified OTT -> PBDB links where the two taxonomies use different names for the same clade. Matched by id only.",
+    "202765": {"id": 67093, "name": "Choanoflagellata", "note": "OTT 'Choanoflagellida' = PBDB 'Choanoflagellata' (PBDB has no occurrences for it)"},
+    "691846": {"id": 67091, "name": "Animalia", "note": "OTT 'Metazoa' = PBDB 'Animalia' (parent Opisthokonta)"}
+  },
+  "slices": {
+    "_comment": "Time slices: ICS epochs for the Phanerozoic, ICS periods for the Proterozoic, as served by PBDB intervals (scale 1).",
+    "phanerozoic_type": "epoch",
+    "precambrian_type": "period",
+    "oldest_ma": 2500,
+    "representatives_per_group": 5,
+    "representatives_per_size_decade": 5
+  },
+  "genera": {"min_occs": 1}
+}

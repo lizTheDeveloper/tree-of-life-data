@@ -1,0 +1,34 @@
+{
+  "_comment": "Curated crown-group / divergence ages (Ma) for key nodes, keyed by OTT id. Each entry is one published estimate with its citation. kind: 'clock' = molecular-clock estimate (min_ma/max_ma = reported interval), 'fossil_minimum' = oldest accepted fossil of the crown group (a minimum age, not the divergence itself), 'biomarker' = biomarker evidence. No TimeTree values are used anywhere. check='secondary' means the value was restated from the paper's abstract or a review summary and has not been re-checked against the full text for this release.",
+  "304358": [
+    {"kind": "fossil_minimum", "ma": 1047, "min_ma": 1030, "max_ma": 1060, "src": "Gibson2018", "check": "secondary", "note": "Bangiomorpha pubescens, a crown-group red alga, so a minimum for crown Eukaryota."},
+    {"kind": "biomarker", "ma": null, "min_ma": 800, "max_ma": null, "src": "Brocks2023", "check": "secondary", "note": "Crown-group eukaryote steroids become abundant only from the Tonian (~800 Ma); stem-group protosterol biota from ~1600 Ma."}
+  ],
+  "691846": [
+    {"kind": "clock", "ma": null, "min_ma": 650, "max_ma": 833, "src": "dosReis2015", "check": "secondary", "note": "Crown Metazoa; the authors stress that current data cannot narrow this interval much."}
+  ],
+  "117569": [
+    {"kind": "fossil_minimum", "ma": 555, "min_ma": null, "max_ma": null, "src": "Evans2020", "check": "secondary", "note": "Ikaria wariootia, 2-7 mm, Ediacara Member, South Australia; oldest bilaterian body fossil."}
+  ],
+  "611099": [
+    {"kind": "fossil_minimum", "ma": 535, "min_ma": null, "max_ma": null, "src": "Liu2022", "check": "secondary", "note": "Saccorhytus (Fortunian, ~535 Ma) reinterpreted as an early ecdysozoan."}
+  ],
+  "632179": [
+    {"kind": "fossil_minimum", "ma": 521, "min_ma": null, "max_ma": null, "src": "Paterson2019", "check": "secondary", "note": "Oldest trilobite body fossils (~521 Ma); arthropod trace fossils are older."}
+  ],
+  "1062253": [
+    {"kind": "clock", "ma": 479, "min_ma": null, "max_ma": null, "src": "Misof2014", "check": "secondary", "note": "Crown Insecta, Early Ordovician."}
+  ],
+  "1048707": [
+    {"kind": "clock", "ma": 406, "min_ma": null, "max_ma": null, "src": "Misof2014", "check": "secondary", "note": "Crown Pterygota (winged insects), Early Devonian; oldest winged-insect fossils are ~325 Ma."}
+  ],
+  "150772": [
+    {"kind": "fossil_minimum", "ma": 407, "min_ma": null, "max_ma": null, "src": "Edwards2018", "check": "secondary", "note": "Mites in the Rhynie chert (Early Devonian), among the oldest terrestrial animals."}
+  ],
+  "391142": [
+    {"kind": "clock", "ma": 200, "min_ma": null, "max_ma": null, "src": "Herron2009", "check": "secondary", "note": "Origin of volvocine multicellularity (Triassic, ~200 Ma). Strictly this dates the stem of the colonial volvocine clade, which is older than crown Volvocaceae."}
+  ],
+  "56610": [
+    {"kind": "clock", "ma": null, "min_ma": 470, "max_ma": 515, "src": "Morris2018", "check": "secondary", "note": "Crown embryophytes (land plants), mid-Cambrian to Early Ordovician."}
+  ]
+}

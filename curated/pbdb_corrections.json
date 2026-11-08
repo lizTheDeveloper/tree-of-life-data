@@ -1,0 +1,11 @@
+{
+  "_comment": "Known errors in PBDB records that would otherwise distort ranges in this package, keyed by PBDB taxon id of a genus. 'bad' is the erroneous first appearance as served; 'corrected' is the first appearance recomputed from the genus's remaining PBDB occurrences. A clade whose PBDB first appearance equals a 'bad' value (same first_max_ma and early_interval) gets its first appearance recomputed from its genera and child clades in this package (fossil.basis 'pbdb_taxon_adjusted'). These should be reported upstream to PBDB.",
+  "genus_first_appearance": {
+    "216160": {
+      "name": "Humiryssus",
+      "bad": {"first_max_ma": 471.3, "first_min_ma": 469.1, "early_interval": "Dapingian"},
+      "corrected": {"first_max_ma": 139.1, "first_min_ma": 137.05, "early_interval": "Late Berriasian"},
+      "reason": "Cretaceous wasp genus (Baissidae). One occurrence (PBDB occurrence 1661280, identified as 'Aulocopsis simplex', Volkhov horizon, Dapingian, 471.3-469.1 Ma) is resolved to Humiryssus, which makes Insecta, Pterygota and Hymenoptera appear ~470 Ma in PBDB. Its other six occurrences are Berriasian to Aptian (139.1-113.2 Ma). Checked 2026-11-08 via PBDB occs/list?base_id=216160."
+    }
+  }
+}
