@@ -16,7 +16,7 @@ always give byte-identical outputs.
 
 ```sh
 python3 -I query.py --time 500 --size-mm 0.5 --habitat marine
-# clade  ott:111438  Tardigrada  phylum  0.05-1.2 mm  freshwater,marine,terrestrial
+# clade  ott:111438  Tardigrada  phylum  0.05-2.1 mm  freshwater,marine,terrestrial
 
 python3 -I query.py --time 310 --size-mm 100 --habitat terrestrial --limit 5   # Carboniferous giants
 python3 -I query.py --time 407 --habitat terrestrial --include-unknown-size     # Rhynie-chert time
@@ -105,7 +105,7 @@ and `clades_with_fossils`.
 
 ## Scope
 
-v0.1 is Eukaryota cut down to the groups an early-life setting needs:
+v0.1 is Eukaryota cut down to ten focal groups:
 
 | Focal group (OTT id) | Depth limit | Most specific rank kept |
 |---|---|---|
@@ -170,7 +170,8 @@ python3 -I -m unittest discover -s tests -v
 - **First run:** a cold build makes about 290 API requests and takes roughly
   10 minutes, because it is rate-limited to 1 request per second per host
   (NCBI: 2 per second). Most of the time goes on large PBDB pages. The cache
-  is about 82 MB and is not committed.
+  is about 82 MB and is not committed. To skip the fetch, use the published
+  cache (see [Prebuilt cache](#prebuilt-cache)).
 - **Politeness:** every response is cached. Requests use small pages (1,000
   PBDB records, 2,500 for measurements), the User-Agent is
   `tree-of-life-data-build/0.1`, and failed requests are retried with backoff.
@@ -180,6 +181,26 @@ python3 -I -m unittest discover -s tests -v
   `data/` byte for byte. It also checks `manifest.json`'s SHA-256 values.
 - **Fresh fetches:** a fresh fetch reflects the live upstream databases, so
   `data/` can change. The source versions are in `manifest.json`.
+
+### Prebuilt cache
+
+The exact API responses that `data/` v0.1 was built from are published as a
+release asset, `tree-of-life-cache-v0.1.tar.gz` (4.5 MB compressed, about
+82 MB unpacked, 286 responses), at
+<https://github.com/lizTheDeveloper/tree-of-life-data/releases> (tag `v0.1`).
+SHA-256:
+`0e414352f839a76d786cf977ba45c931bcf8372cf3ec35cfd98e62caafd1eabc`.
+
+```sh
+shasum -a 256 tree-of-life-cache-v0.1.tar.gz   # or: sha256sum
+tar -xzf tree-of-life-cache-v0.1.tar.gz          # in the repo root; creates cache/
+python3 -I build.py --offline                    # rebuilds data/ byte for byte
+python3 -I -m unittest discover -s tests -v
+```
+
+The cache holds only the public API responses (URL, method, fetch date and
+body), under the same terms as the data they contain (see
+[DATA-LICENSE.md](DATA-LICENSE.md)).
 
 ### How OTT clades are linked to PBDB (and why not by name)
 
@@ -224,7 +245,8 @@ The data licence is in [DATA-LICENSE.md](DATA-LICENSE.md). In short:
 - **Paleobiology Database** (fossil ranges, environments, genera, specimen
   measurements, ICS intervals): treated as CC BY 4.0 and attributed, via
   <https://paleobiodb.org/data1.2/>. *Note:* on 2026-11-08 the API's
-  `datainfo` declared CC0; see open questions.
+  `datainfo` declared CC0 for these endpoints. This package still applies the
+  stricter CC BY 4.0 terms and gives attribution, which CC0 permits.
 - **NCBI Taxonomy** (English common names): public domain, US government work.
 - **Curated tables** (`curated/`): divergence dates, sizes and habitats,
   restated with citations from the papers in `data/references.json`; CC BY 4.0.
@@ -250,16 +272,26 @@ Attribution text to reproduce:
 
 ## Known limitations (v0.1)
 
-- **Sizes are sparse.** Seven clades have a curated, cited size. Everything
+- **Sizes are sparse.** Six clades have a curated, cited size. Everything
   else comes from PBDB fossil body lengths, which are mostly insects and a
   few arachnids. Derived clade sizes are min–max ranges over measured genera,
   not typical sizes. Measurement units are not stated in the PBDB API. They
   are taken to be mm, and spot checks agree (fairyflies ~0.3 mm, fossil
   odonates ~100 mm).
-- **Curated values are restated from secondary summaries.** Every curated
-  date, size and habitat has `check: "secondary"`: it was restated from the
-  paper's abstract or a review, and has not been re-read against the full
-  text.
+- **Some curated values are checked only against an abstract.** Every
+  curated date, size and habitat carries a `check` field. 16 of the 20 have
+  `check: "full_text"`: the number, interval, units, the node it dates (crown
+  or stem/total group) and the citation were checked against the full text
+  (for Brocks 2023 and Liu 2022, the authors' manuscripts). Four have
+  `check: "abstract"` because the full text was not openly available: the
+  *Bangiomorpha* age (Gibson 2018, abstract plus open supplement), the two
+  insect dates (Misof 2014: which node "origin of insects" and "origin of
+  insect flight" date, and their intervals, are unconfirmed) and the
+  *Dicopomorpha* male size (Mockford 1997). Each record's `note` says what
+  the source actually dates; several fossil minima are total-group fossils,
+  so they constrain the stem, not the crown, of the clade they are attached
+  to. Choanoflagellida has no curated size, because no verifiable source was
+  found.
 - **PBDB ranges for high-level clades are unreliable.** For example, PBDB
   files Paleoproterozoic "Problematica" under Animalia, giving a first
   appearance of 2050 Ma. They are shipped with a `caveat` and are not used
@@ -277,11 +309,3 @@ Attribution text to reproduce:
 - **Genera have no OTT ids.**
 - **Synthetic tree:** 67 OTT taxa are "broken" in the synthesis, which means
   they are not monophyletic there. Acari is one of them.
-
-## Open questions before publishing
-
-- **PBDB licence:** CC BY 4.0, as treated here, or CC0, as the API now
-  declares? The safe choice is kept.
-- **Curated values:** verify each against the full text of its paper.
-- **Inputs:** ship the cache as a release artefact, so that others can
-  rebuild offline from exactly these inputs?
