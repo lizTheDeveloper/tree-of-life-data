@@ -1,34 +1,34 @@
 {
-  "_comment": "Curated crown-group / divergence ages (Ma) for key nodes, keyed by OTT id. Each entry is one published estimate with its citation. kind: 'clock' = molecular-clock estimate (min_ma/max_ma = reported interval), 'fossil_minimum' = oldest accepted fossil of the crown group (a minimum age, not the divergence itself), 'biomarker' = biomarker evidence. No TimeTree values are used anywhere. check='secondary' means the value was restated from the paper's abstract or a review summary and has not been re-checked against the full text for this release.",
+  "_comment": "Curated divergence ages (Ma) for key nodes, keyed by OTT id. Each entry is one published estimate with its citation; 'note' says which node the source actually dates (crown or stem/total group), which may differ from the OTT clade it is attached to. kind: 'clock' = molecular-clock estimate (ma = reported point estimate; min_ma/max_ma = the reported credibility interval); 'fossil_minimum' = age of the oldest accepted fossil, a minimum for the lineage it belongs to, not the divergence itself (ma = reported age; min_ma/max_ma = the dating uncertainty of the fossil horizon, or the age bracket when no point age is given); 'biomarker' = molecular-fossil evidence. No TimeTree values are used anywhere. check: 'full_text' = the value, interval, units, node and citation were checked against the full text of the cited work (publisher version, or the authors' accepted/submitted manuscript where that is the open copy; the note says which); 'abstract' = only the abstract (and any open supplement named in the note) could be read, so the node definition and interval have not been confirmed from the full text.",
   "304358": [
-    {"kind": "fossil_minimum", "ma": 1047, "min_ma": 1030, "max_ma": 1060, "src": "Gibson2018", "check": "secondary", "note": "Bangiomorpha pubescens, a crown-group red alga, so a minimum for crown Eukaryota."},
-    {"kind": "biomarker", "ma": null, "min_ma": 800, "max_ma": null, "src": "Brocks2023", "check": "secondary", "note": "Crown-group eukaryote steroids become abundant only from the Tonian (~800 Ma); stem-group protosterol biota from ~1600 Ma."}
+    {"kind": "fossil_minimum", "ma": 1047, "min_ma": 1030, "max_ma": 1060, "src": "Gibson2018", "check": "abstract", "note": "Re-Os first appearance of Bangiomorpha pubescens, 1.047 +0.013/-0.017 Ga. A crown-group red alga, so a minimum for crown Eukaryota (and for the red-green algal split). Checked against the abstract and the open GSA Data Repository supplement (2018030); the article itself is not open access."},
+    {"kind": "biomarker", "ma": null, "min_ma": 800, "max_ma": null, "src": "Brocks2023", "check": "full_text", "note": "Crown-group sterane biomarkers ('crown-steroids') first appear ~800 Ma (Tonian). Older protosteroids (a 'Protosterol Biota', from at least 1,640 Ma to ~800 Ma) are attributed to protosterol-producing bacteria and/or stem-group eukaryotes. Read in the authors' manuscript (HAL hal-04273175)."}
   ],
   "691846": [
-    {"kind": "clock", "ma": null, "min_ma": 650, "max_ma": 833, "src": "dosReis2015", "check": "secondary", "note": "Crown Metazoa; the authors stress that current data cannot narrow this interval much."}
+    {"kind": "clock", "ma": null, "min_ma": 650, "max_ma": 833, "src": "dosReis2015", "check": "full_text", "note": "Crown Metazoa, 833-650 Ma, after integrating all sources of uncertainty explored (data partitioning, calibration strategy, clock model); the authors stress that current data cannot narrow this much."}
   ],
   "117569": [
-    {"kind": "fossil_minimum", "ma": 555, "min_ma": null, "max_ma": null, "src": "Evans2020", "check": "secondary", "note": "Ikaria wariootia, 2-7 mm, Ediacara Member, South Australia; oldest bilaterian body fossil."}
+    {"kind": "fossil_minimum", "ma": null, "min_ma": 551, "max_ma": 560, "src": "Evans2020", "check": "full_text", "note": "Ikaria wariootia, Ediacara Member, South Australia; body 1.9-6.7 mm long (maximum ~7 mm). Interpreted as a total-group bilaterian (the probable maker of Helminthoidichnites traces), so a minimum for the bilaterian stem (split from Cnidaria), not for crown Bilateria. No radiometric date: 560-551 Ma is by correlation with the White Sea assemblage."}
   ],
   "611099": [
-    {"kind": "fossil_minimum", "ma": 535, "min_ma": null, "max_ma": null, "src": "Liu2022", "check": "secondary", "note": "Saccorhytus (Fortunian, ~535 Ma) reinterpreted as an early ecdysozoan."}
+    {"kind": "fossil_minimum", "ma": null, "min_ma": 531.8, "max_ma": 536.4, "src": "Liu2022", "check": "full_text", "note": "Saccorhytus coronarius, Kuanchuanpu Formation (Fortunian, 531.8-536.4 Ma), South China. Resolved as a total-group ecdysozoan (basal ecdysozoan, panarthropod or cycloneuralian), not a deuterostome; a minimum for the ecdysozoan stem, not for crown Ecdysozoa. Read in the authors' accepted manuscript (University of Bristol repository)."}
   ],
   "632179": [
-    {"kind": "fossil_minimum", "ma": 521, "min_ma": null, "max_ma": null, "src": "Paterson2019", "check": "secondary", "note": "Oldest trilobite body fossils (~521 Ma); arthropod trace fossils are older."}
+    {"kind": "fossil_minimum", "ma": 521, "min_ma": null, "max_ma": null, "src": "Paterson2019", "check": "full_text", "note": "Oldest trilobite body fossils, ca. 521 Ma (base of Cambrian Series 2). Trilobites are crown-group euarthropods, so this is a minimum for crown Euarthropoda. Trilobite-like trace fossils (Rusophycus) are older (early Fortunian)."}
   ],
   "1062253": [
-    {"kind": "clock", "ma": 479, "min_ma": null, "max_ma": null, "src": "Misof2014", "check": "secondary", "note": "Crown Insecta, Early Ordovician."}
+    {"kind": "clock", "ma": 479, "min_ma": null, "max_ma": null, "src": "Misof2014", "check": "abstract", "note": "The abstract's 'origin of insects', Early Ordovician (~479 Ma). The full text was not accessible, so whether this dates crown Insecta, crown Hexapoda or a stem node, and its credibility interval, have not been confirmed."}
   ],
   "1048707": [
-    {"kind": "clock", "ma": 406, "min_ma": null, "max_ma": null, "src": "Misof2014", "check": "secondary", "note": "Crown Pterygota (winged insects), Early Devonian; oldest winged-insect fossils are ~325 Ma."}
+    {"kind": "clock", "ma": 406, "min_ma": null, "max_ma": null, "src": "Misof2014", "check": "abstract", "note": "The abstract's 'origin of insect flight', Early Devonian (~406 Ma). The full text was not accessible, so whether this is the crown-Pterygota node, and its credibility interval, have not been confirmed."}
   ],
   "150772": [
-    {"kind": "fossil_minimum", "ma": 407, "min_ma": null, "max_ma": null, "src": "Edwards2018", "check": "secondary", "note": "Mites in the Rhynie chert (Early Devonian), among the oldest terrestrial animals."}
+    {"kind": "fossil_minimum", "ma": 407.6, "min_ma": 405.4, "max_ma": 409.8, "src": "Edwards2018", "check": "full_text", "note": "Mites are among the earliest occurrences in the Rhynie and Windyfield cherts (Early Devonian). Age 407.6 +/- 2.2 Ma (40Ar/39Ar), the age the authors favour. The paper does not place the mites within Acari; Acari is not monophyletic in the Open Tree synthesis."}
   ],
   "391142": [
-    {"kind": "clock", "ma": 200, "min_ma": null, "max_ma": null, "src": "Herron2009", "check": "secondary", "note": "Origin of volvocine multicellularity (Triassic, ~200 Ma). Strictly this dates the stem of the colonial volvocine clade, which is older than crown Volvocaceae."}
+    {"kind": "clock", "ma": 200, "min_ma": 179, "max_ma": 222, "src": "Herron2009", "check": "full_text", "note": "Crown Volvocaceae (node C in Fig. 2), 200 Ma (95% credibility interval 179-222), by which the spheroidal body plan had evolved. The volvocine lineage diverged from unicellular relatives ~234 Ma (209-260) and was multicellular by ~223 Ma (200-248)."}
   ],
   "56610": [
-    {"kind": "clock", "ma": null, "min_ma": 470, "max_ma": 515, "src": "Morris2018", "check": "secondary", "note": "Crown embryophytes (land plants), mid-Cambrian to Early Ordovician."}
+    {"kind": "clock", "ma": null, "min_ma": 470.0, "max_ma": 515.1, "src": "Morris2018", "check": "full_text", "note": "Crown Embryophyta (land plants), 95% HPD across all topologies 515.1-470.0 Ma (middle Cambrian to Early Ordovician). Across alternative dating strategies it ranges from 583.1 to 470.0 Ma."}
   ]
 }

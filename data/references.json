@@ -1,4 +1,8 @@
 {
+ "Balasubramanian2023": {
+  "cite": "Balasubramanian RN, Gao M, Umen J (2023) Identification of cell-type specific alternative transcripts in the multicellular alga Volvox carteri. BMC Genomics 24: 654.",
+  "doi": "10.1186/s12864-023-09558-0"
+ },
  "Brocks2023": {
   "cite": "Brocks JJ, Nettersheim BJ, Adam P, et al. (2023) Lost world of complex life and the late rise of the eukaryotic crown. Nature 618: 767-773.",
   "doi": "10.1038/s41586-023-06170-w"
@@ -6,6 +10,10 @@
  "BrunetKing2017": {
   "cite": "Brunet T, King N (2017) The origin of animal multicellularity and cell differentiation. Developmental Cell 43: 124-140.",
   "doi": "10.1016/j.devcel.2017.09.016"
+ },
+ "Corsi2015": {
+  "cite": "Corsi AK, Wightman B, Chalfie M (2015) A transparent window into biology: a primer on Caenorhabditis elegans. Genetics 200: 387-407.",
+  "doi": "10.1534/genetics.115.176099"
  },
  "Edwards2018": {
   "cite": "Edwards D, Kenrick P, Dolan L (2018) History and contemporary significance of the Rhynie cherts - our earliest preserved terrestrial ecosystem. Philosophical Transactions of the Royal Society B 373: 20160489.",
@@ -23,17 +31,17 @@
   "cite": "Herron MD, Hackett JD, Aylward FO, Michod RE (2009) Triassic origin and early radiation of multicellular volvocine algae. PNAS 106: 3254-3258.",
   "doi": "10.1073/pnas.0811205106"
  },
- "Kirk2005": {
-  "cite": "Kirk DL (2005) A twelve-step program for evolving multicellularity and a division of labor. BioEssays 27: 299-310.",
-  "doi": "10.1002/bies.20197"
- },
  "Liu2022": {
   "cite": "Liu Y, Carlisle E, Zhang H, et al. (2022) Saccorhytus is an early ecdysozoan and not the earliest deuterostome. Nature 609: 541-546.",
   "doi": "10.1038/s41586-022-05107-z"
  },
  "Manson1984": {
-  "cite": "Manson DCM (1984) Eriophyoidea except Eriophyinae (Arachnida: Acari). Fauna of New Zealand 4. Science Information Publishing Centre, Wellington.",
-  "doi": null
+  "cite": "Manson DCM (1984) Eriophyoidea except Eriophyinae (Arachnida: Acari). Fauna of New Zealand 4. DSIR, Wellington.",
+  "doi": "10.7931/J2/FNZ.4"
+ },
+ "Mapalo2024": {
+  "cite": "Mapalo MA, Wolfe JM, Ortega-Hernández J (2024) Cretaceous amber inclusions illuminate the evolutionary origin of tardigrades. Communications Biology 7: 953.",
+  "doi": "10.1038/s42003-024-06643-2"
  },
  "Misof2014": {
   "cite": "Misof B, Liu S, Meusemann K, et al. (2014) Phylogenomics resolves the timing and pattern of insect evolution. Science 346: 763-767.",
@@ -47,21 +55,21 @@
   "cite": "Morris JL, Puttick MN, Clark JW, et al. (2018) The timescale of early land plant evolution. PNAS 115: E2274-E2283.",
   "doi": "10.1073/pnas.1719588115"
  },
- "Nelson2015": {
-  "cite": "Nelson DR, Guidetti R, Rebecchi L (2015) Phylum Tardigrada. In: Thorp JH, Rogers DC (eds) Thorp and Covich's Freshwater Invertebrates, 4th edn, vol. 1. Academic Press, pp. 347-380.",
-  "doi": "10.1016/B978-0-12-385026-3.00017-6"
- },
  "Paterson2019": {
   "cite": "Paterson JR, Edgecombe GD, Lee MSY (2019) Trilobite evolutionary rates constrain the duration of the Cambrian explosion. PNAS 116: 4394-4399.",
   "doi": "10.1073/pnas.1819366116"
  },
  "QuirogaArtigas2024": {
-  "cite": "Quiroga-Artigas G, Moriel-Carretero M (2024) Biology Open 13: bio060299 (cell number and growth in the tardigrade Hypsibius exemplaris).",
+  "cite": "Quiroga-Artigas G, Moriel-Carretero M (2024) Storage cell proliferation during somatic growth establishes that tardigrades are not eutelic organisms. Biology Open 13: bio060299.",
   "doi": "10.1242/bio.060299"
  },
- "SulstonHorvitz1977": {
-  "cite": "Sulston JE, Horvitz HR (1977) Post-embryonic cell lineages of the nematode, Caenorhabditis elegans. Developmental Biology 56: 110-156.",
-  "doi": "10.1016/0012-1606(77)90158-0"
+ "SadowskaBartosz2024": {
+  "cite": "Sadowska-Bartosz I, Bartosz G (2024) Antioxidant defense in the toughest animals on the Earth: its contribution to the extreme resistance of tardigrades. International Journal of Molecular Sciences 25: 8393.",
+  "doi": "10.3390/ijms25158393"
+ },
+ "Umen2020": {
+  "cite": "Umen JG (2020) Volvox and volvocine green algae. EvoDevo 11: 13.",
+  "doi": "10.1186/s13227-020-00158-7"
  },
  "dosReis2015": {
   "cite": "dos Reis M, Thawornwattana Y, Angelis K, Telford MJ, Donoghue PCJ, Yang Z (2015) Uncertainty in the timing of origin of animals and the limits of precision in molecular timescales. Current Biology 25: 2939-2950.",

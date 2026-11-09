@@ -1,10 +1,9 @@
 {
-  "_comment": "Curated body-size ranges (mm, longest dimension of the adult body or colony), keyed by OTT id. Used in preference to PBDB-derived sizes. check='secondary' = restated from the cited work or a summary of it, not re-measured or re-read in full for this release.",
-  "111438": {"min_mm": 0.05, "max_mm": 1.2, "src": "Nelson2015", "check": "secondary", "note": "Adult tardigrades, whole phylum."},
-  "7485612": {"min_mm": 0.125, "max_mm": 0.24, "src": "QuirogaArtigas2024", "check": "secondary", "note": "Hatchling to adult body length."},
-  "395048": {"min_mm": 1.0, "max_mm": 1.0, "src": "SulstonHorvitz1977", "check": "secondary", "note": "Adult hermaphrodite, ~1 mm."},
-  "270732": {"min_mm": 0.1, "max_mm": 0.3, "src": "Manson1984", "check": "secondary", "note": "Eriophyoid mites, adult body length."},
-  "3320116": {"min_mm": 0.139, "max_mm": null, "src": "Mockford1997", "check": "secondary", "note": "Adult males; smallest known insect. Females are larger."},
-  "391120": {"min_mm": null, "max_mm": 0.5, "src": "Kirk2005", "check": "secondary", "note": "Spheroid (colony) diameter, up to ~0.5 mm."},
-  "202765": {"min_mm": 0.003, "max_mm": 0.01, "src": "BrunetKing2017", "check": "secondary", "note": "Single cell body, approximate; colonies (rosettes) are larger."}
+  "_comment": "Curated body-size ranges (mm, body length, or diameter for spherical colonies), keyed by OTT id. Used in preference to PBDB-derived sizes. The note says which life stages and sexes the range covers. check: 'full_text' = the range, units and citation were checked against the full text of the cited work; 'abstract' = only the abstract could be read. Choanoflagellida has no curated size: the cited review gives none, and no open source was verified (removed in v0.1).",
+  "111438": {"min_mm": 0.05, "max_mm": 2.1, "src": "SadowskaBartosz2024", "check": "full_text", "note": "Whole phylum: 50-2100 µm long, usually 250-500 µm (review statement)."},
+  "7485612": {"min_mm": 0.125, "max_mm": 0.24, "src": "QuirogaArtigas2024", "check": "full_text", "note": "Body length from hatchling (~125 µm) to fully grown adult (~240 µm); animals start laying eggs well before full size."},
+  "395048": {"min_mm": 1.0, "max_mm": 1.0, "src": "Corsi2015", "check": "full_text", "note": "Adult, ~1 mm long (newly hatched larvae 0.25 mm)."},
+  "270732": {"min_mm": 0.101, "max_mm": 0.306, "src": "Manson1984", "check": "full_text", "note": "Eriophyoid mites, body length 101-306 µm (approximately 0.1-0.3 mm)."},
+  "3320116": {"min_mm": 0.139, "max_mm": 0.24, "src": "Mockford1997", "check": "abstract", "note": "Adult males only, ~139-240 µm, the smallest adult insects known. Males are ~0.4 times the body length of females, so females are larger than this range."},
+  "391120": {"min_mm": null, "max_mm": 0.5, "src": "Balasubramanian2023", "check": "full_text", "note": "Vegetative spheroid (colony) diameter, up to 500 µm."}
 }

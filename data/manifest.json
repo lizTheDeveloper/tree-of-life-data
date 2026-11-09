@@ -7,14 +7,14 @@
   "clades_with_fossil_range": 309,
   "clades_with_habitat": 257,
   "clades_with_pbdb_match": 332,
-  "clades_with_size": 154,
+  "clades_with_size": 153,
   "genera": 15409,
   "genera_with_size": 7068,
   "slices": 44
  },
  "fetched_dates": [
-  "2026-11-08",
-  "2026-11-08"
+  "2026-11-09",
+  "2026-11-09"
  ],
  "files": {
   "build_report.json": {
@@ -22,16 +22,16 @@
    "sha256": "c9303e783948d41ca48c3bec12a05c4a3f5b4b2ce98276a53404fd0091ea7253"
   },
   "clades.jsonl": {
-   "bytes": 766789,
-   "sha256": "310804b9debec1a628557c0896fd62481c8d56e5dc426314ab310cbb531f72ce"
+   "bytes": 768797,
+   "sha256": "fb6a031f263792db2bc75f9d53997a38526560349c65e3de5d556206bce97b0d"
   },
   "genera.jsonl": {
    "bytes": 10368227,
    "sha256": "17a49aa0f7764cf997a029c59f6535343d7ffc0847855d4ba49c893d111b1c11"
   },
   "references.json": {
-   "bytes": 3706,
-   "sha256": "c4057fcbff1deca898091c89b01d023ad20cc90ab3220fa3a9b39d6ebd738cea"
+   "bytes": 4173,
+   "sha256": "637ff468d750e3f31cd93d8296166fa691828be9fbe721a7200046ebbd15e2d0"
   },
   "slices.jsonl": {
    "bytes": 50221,

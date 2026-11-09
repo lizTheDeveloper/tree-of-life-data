@@ -1,6 +1,6 @@
 {
-  "_comment": "Curated habitat tags, keyed by OTT id, for clades where PBDB has no environment value. Tags use the package vocabulary (marine, brackish, freshwater, terrestrial). Applied only when PBDB gives none.",
-  "202765": {"tags": ["freshwater", "marine"], "src": "BrunetKing2017", "check": "secondary"},
-  "391142": {"tags": ["freshwater"], "src": "Kirk2005", "check": "secondary"},
-  "111438": {"tags": ["freshwater", "marine", "terrestrial"], "src": "Nelson2015", "check": "secondary", "note": "Terrestrial species live in water films on mosses, lichens and leaf litter."}
+  "_comment": "Curated habitat tags, keyed by OTT id, for clades where PBDB has no environment value. Tags use the package vocabulary (marine, brackish, freshwater, terrestrial). Applied only when PBDB gives none. check: 'full_text' = the statement was found in the full text of the cited work; 'abstract' = only the abstract could be read.",
+  "202765": {"tags": ["freshwater", "marine"], "src": "BrunetKing2017", "check": "full_text", "note": "Choanoflagellates: 'a globally distributed group of marine and freshwater protozoans'."},
+  "391142": {"tags": ["freshwater"], "src": "Umen2020", "check": "full_text", "note": "Stated for Volvox ('multicellular freshwater green algae'; V. carteri in ponds, rice paddies and lakes), the largest genus of Volvocaceae; applied here to the family."},
+  "111438": {"tags": ["freshwater", "marine", "terrestrial"], "src": "Mapalo2024", "check": "full_text", "note": "Worldwide in marine, freshwater and terrestrial habitats; limnoterrestrial species commonly live in lichens, liverworts and mosses."}
 }
